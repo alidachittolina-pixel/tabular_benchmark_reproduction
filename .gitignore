@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# data is pulled from OpenML at runtime, not committed
+data/*
+!data/.gitkeep
+
+# python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# generated raw benchmark records
+results/*.csv
+results/ablation_raw_*.csv
+
+# keep figures used by the README
+!results/
+!results/*.png
